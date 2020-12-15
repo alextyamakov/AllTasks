@@ -4,12 +4,11 @@ import Task7.Input.InputFromConsole;
 
 public class CountArguments implements Execute {
 
-    public void count(InputFromConsole CurrentSign) {
+    public static double count(InputFromConsole CurrentSign) {
         double arg1 = CurrentSign.getArg1();
         double arg2 = CurrentSign.getArg2();
         String currentSign = CurrentSign.getOperType();
         double result = 0;
-
 
         if (currentSign.equals(plus)) {
             result = arg1 + arg2;
@@ -35,5 +34,6 @@ public class CountArguments implements Execute {
             e.printStackTrace();
         }
 
+        return result;
     }
 }

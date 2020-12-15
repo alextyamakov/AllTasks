@@ -7,7 +7,10 @@ public interface Execute {
     String minus = "-";
     String multiplicate = "*";
     String divide = "/";
+    double var = 0;
 
-    void count(InputFromConsole CurrentSign);
+    static double count(InputFromConsole CurrentSign) {
+        return var;
+    }
 }
 

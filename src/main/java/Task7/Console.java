@@ -12,6 +12,8 @@ public class Console {
         Scanner sc = new Scanner(System.in);
         Execute countArguments = new CountArguments();
         InputFromConsole inputSet = new InputFromConsole();
+        double result = 0;
+
 
         System.out.println("Введите первый аргумент: ");
         try {
@@ -30,6 +32,6 @@ public class Console {
         catch (InputMismatchException f) {
             System.out.println("Вы ввели не число:" + f);
         }
-        countArguments.count(inputSet);
+        CountArguments.count(inputSet);
     }
 }
